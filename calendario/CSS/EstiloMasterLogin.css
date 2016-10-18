@@ -1,0 +1,411 @@
+﻿/*Fuentes globales para la página*/
+@font-face
+{
+    font-family: "Futura Std Light";
+    src:
+        url('../Fuentes/FuturaStd-Light.otf') format('opentype'),
+        url('../Fuentes/FuturaStd-Light.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: "Futura Std Book";
+    src:
+        url('../Fuentes/FuturaStd-Book.otf') format('opentype'),
+        url('../Fuentes/FuturaStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: "Futura Std Medium";
+    src:
+        url('../Fuentes/FuturaStd-Medium.otf') format('opentype'),
+        url('../Fuentes/FuturaStd-Medium.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: "Futura Std Heavy";
+    src:
+        url('../Fuentes/FuturaStd-Heavy.otf') format('opentype'),
+        url('../Fuentes/FuturaStd-Heavy.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+/*Color y fuente global para todos los elementos*/
+*
+{
+    font-family:"Futura Std Book";
+    color:#878786;
+}
+/*Cuerpo sin margen y tamaño mínimo de 1000 pixeles en color gris claro hex FAFAFA*/
+
+body
+{
+    background-color: #f5f5f5;
+    background-image: 
+        linear-gradient(90deg, #FFFFFF 5%, transparent 25%, transparent 75%, #FFFFFF 95%),
+        linear-gradient(#FFFFFF 5%, transparent 25%, transparent 75%, #FFFFFF 95%);
+    background-size:8px 8px;
+    min-width:1000px;
+}
+
+/*Área de las clases*/
+.cajasTexto 
+{
+    color:#878786;
+    border-color:#878786;
+    border-style:solid;
+    border-width:1px;
+    width:100%;
+    height:20px;
+    margin-bottom:30px;
+}
+    .cajasTexto:focus
+    {
+        border-color:#0f205a;
+    }
+.botones 
+{
+    color:#FFFFFF;
+    border-style:none;
+    width:120px;
+    height:40px;
+    margin-bottom:30px;
+    background-color:#111547;
+}
+    .botones:hover 
+    {
+        background-color:#0f205a;
+    }
+.barraBusqueda 
+{
+    position:relative;
+    float:left;
+    width:150px;
+    height:15px;
+    border-style:none;
+    background-color:#FAFAFA;
+    color:#0F205A;
+    border-radius:5px 5px;
+
+}
+
+.cajasTextoRegistro 
+{
+    color:#878786;
+    border-color:#878786;
+    border-style:solid;
+    border-width:1px;
+    margin-bottom:30px;
+    width:70%;
+}
+    .cajasTextoRegistro:focus
+    {
+        border-color:#0f205a;
+    }
+
+/*El borde superior que contiene el logo de la UAQ, el título y algunos iconos con enlaces*/
+#bordeSuperior
+{
+    width:100%;
+    height:110px;
+    background-color:#FFFFFF;
+}
+/*El área del contenido del borde*/
+#contenidoBorde
+{
+    width:100%;
+    height:90px;
+}
+/*Logo de la UAQ*/
+#logo 
+{
+    position:relative;
+    float:left;
+    margin-left:10%;
+    margin-top:5px;
+    width:60px;
+    height:80px;
+    border-right: 1px solid #DEDEDE;
+    padding:0px;
+    padding-right:10px;
+}
+/*El título de la página*/
+#tituloBorde 
+{
+    position:relative;
+    float:left;
+    margin-left:5px;
+    margin-top:10px;
+}
+    #tituloBorde h1 
+    {
+        font-size:18px;
+        font-weight:lighter;
+        color:#999999;
+        margin:0px;
+    }
+    #tituloBorde h2
+    {
+        font-size:12px;
+        font-weight:lighter;
+        margin:0px;
+    }
+/*Área de los logos con enlaces externos*/
+#logosRedesSocialesBorde 
+{
+    position: relative;
+    float: right;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+    #logosRedesSocialesBorde div 
+    {
+        position:relative;
+        float:left;
+        margin-left:10px;
+        width:30px;
+        height:30px;
+    }
+/*El separador del borde*/
+#separadorBorde
+{
+    width:100%;
+    height:20px;
+    background-color:#111547;
+}
+/*Encabezado de la página*/
+#encabezado 
+{
+    height:350px;
+    width:80%;
+    background-color:#FFFFFF;
+    margin-left:10%;
+    margin-right:10%;
+    min-width:800px;
+}
+/*La pestaña gris*/
+#areaPestana 
+{
+    height:50px;
+    width:100%;
+}
+    #areaPestana div 
+    {
+        position:relative;
+        float:right;
+        margin-top:10px;
+        width:180px;
+        height:40px;
+        pointer-events:none;
+    }
+/*En el título se muestra el nombre del sistema*/
+/*El título principal que se encuentra en la franja azul*/
+#areaTituloPrincipal 
+{
+    height:100px;
+    width:100%;
+    background-color:#0F205A;
+}
+    #areaTituloPrincipal h1 
+    {
+        position:relative;
+        float:left;
+        font-family:'Futura Std Heavy';
+        font-size:70px;
+        color:#FFFFFF;
+        font-weight:normal;
+        line-height:32px;
+        margin-left:20px;
+    }
+/*El título secundario que se encuentra en la franja blanca*/
+#areaTituloSecundario 
+{
+    height:180px;
+    width:100%;
+}
+    #areaTituloSecundario h1 
+    {
+        position:absolute;
+        float:left;
+        font-family:'Futura Std Light';
+        font-size:56px;
+        line-height:10px;
+        margin-left:20px;
+    }
+/*El logo especial de la palabra uaq*/
+#uaqLetras 
+{
+    position:absolute;
+    float:left;
+    width: 300px;
+    height: 250px;
+    margin-top:-10px;
+    margin-left:500px;
+    pointer-events:none;
+}
+/*La estrella que se visualiza a la derecha*/
+#estrella 
+{
+    position:relative;
+    float:right;
+    width:450px;
+    height:400px;
+    margin-right:0px;
+    margin-top:-180px;
+    pointer-events:none;
+}
+/*El separador del encabezado*/
+#areaSeparadorEncabezado 
+{
+    height:20px;
+    width:100%;
+    background-color:#0F205A;
+}
+/*El cuerpo, aqui se localiza el menú de navegación y el contenido de la página*/
+#cuerpo 
+{
+    height:auto;
+    width:80%;
+    float:left;
+    position:relative;
+    background-color:#FFFFFF;
+    margin-left:10%;
+    margin-top:-20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-right:10%;
+    min-width:800px;
+}
+/*Línea punteada*/
+#separadorCuerpo 
+{
+    position:absolute;
+    width:100%;
+    height:40px;
+    border-bottom:1px dashed #878786;
+}
+/*Configuración del menu de navegación*/
+#menuNavegacion 
+{
+    height:inherit;
+    width:200px;
+    margin-left:20px;
+    background-color:#FAFAFA;
+}
+    #menuNavegacion p 
+    {
+        width:200px;
+        font-size:20px;
+        display:block;
+        position:relative;
+        float:left;
+        margin-top:-5px;
+        margin-left:20%;
+    }
+    #menuNavegacion ul 
+    {
+        margin-left:15%;
+        position:relative;
+        float:left;
+        padding:0px;
+    }
+    #menuNavegacion li
+    {
+        margin-bottom:30px;
+        width:0px;
+    }
+    #menuNavegacion li:hover
+    {
+        margin-bottom:30px;
+	    color:#0F205A;
+    }
+    #menuNavegacion a:link
+    {
+        font-size:14px;
+        text-decoration:none;
+    }
+        #menuNavegacion a:hover
+        {        
+	        color:#0F205A;
+        }
+/*Tamaño y posición del contenido*/
+#contenido 
+{
+    position:relative;
+    float:right;
+    width:60%;
+    height:auto;
+    margin-top:100px;
+    margin-right:10%;
+    background-color:#FAFAFA;
+}
+/*Tamaño y posición del pie de página*/
+#pieDePagina 
+{
+    height:50px;
+    width:80%;
+    position:relative;
+    float:left;
+    background-color:#999999;
+    margin-left:10%;
+    margin-right:10%;
+    min-width:800px;
+}
+    /*Tamaño y posición de los logos del pie de página*/
+    #pieDePagina div 
+    {
+        position:relative;
+        float:right;
+        margin-top:15px;
+        margin-left:5px;
+        margin-right:5px;
+        width:30px;
+        height:30px;
+    }
+    /*Fix para el engine Webkit de safari*/
+    #pieDePagina img 
+    {
+        width:auto;
+        height:20px;
+    }
+
+/*Aqui empiezan los estilos de las páginas hijas*/
+
+/*Página Inicio.aspx*/
+
+/*Título del contenido de la página de inicio*/
+#areaTituloContenido 
+{
+    text-align:center;
+    width:100%;
+    font-size:16px;
+}
+#areaTextoContenido 
+{
+    width:100%;
+    text-align:center;
+}
+
+/*Página Estudiantes.aspx*/
+#areaForma 
+{
+    width:30%;
+    margin-left:35%;
+    margin-top:50px;
+}
+
+#divRegistro 
+{
+    width:80%;
+    margin-left:10%;
+}
+#divCambioPass
+{
+    width:60%;
+    margin-left:20%;
+}

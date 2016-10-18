@@ -1,0 +1,424 @@
+﻿
+/*Fuentes utilizadas en la interfaz*/
+@font-face 
+{
+    font-family: "Futura Std Light";
+    src:
+        url('../Fuentes/FuturaStd-Light.otf') format('opentype'),
+        url('../Fuentes/FuturaStd-Light.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: "Futura Std Book";
+    src:
+        url('../Fuentes/FuturaStd-Book.otf') format('opentype'),
+        url('../Fuentes/FuturaStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: "Futura Std Medium";
+    src:
+        url('../Fuentes/FuturaStd-Medium.otf') format('opentype'),
+        url('../Fuentes/FuturaStd-Medium.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: "Futura Std Heavy";
+    src:
+        url('../Fuentes/FuturaStd-Heavy.otf') format('opentype'),
+        url('../Fuentes/FuturaStd-Heavy.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+/*Esqueleto principal*/
+* 
+{
+    font-family:"Futura Std Book";
+    color:#666666;
+}
+body 
+{
+    background-color:#FFFFFF;
+    margin:0px;
+    min-width:1000px;
+}
+
+/*Aqui inician las clases*/
+.areaCalendario
+{
+    position:relative;
+    float:left;
+    width:80%;
+    margin-left:10%;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.cajasDeLista
+{
+    width:50%;
+    /*margin-left:25%;*/
+    height:250px;
+}
+.calendario 
+{
+    width:100%;
+}
+    .calendario a
+    {
+        text-decoration:none;
+    }
+    .calendario td
+    {
+        color:#FFFFFF;
+    }
+.cajasTexto 
+{
+    color:#878786;
+    border-color:#878786;
+    border-style:solid;
+    border-width:1px;
+    width:60%;
+    margin-right:20%;
+    height:20px;
+    margin-bottom:30px;
+}
+    .cajasTexto:focus
+    {
+        border-color:#0f205a;
+    }
+.cajasTextoMultilinea
+{
+    color:#878786;
+    border-color:#878786;
+    border-style:solid;
+    border-width:1px;
+    width:60%;
+    margin-right:20%;
+    height:200px;
+    margin-bottom:30px;
+}
+    .cajasTextoMultilinea:focus
+    {
+        border-color:#0f205a;
+    }
+.listas
+{
+    width:60%;
+    margin-right:20%;
+}
+.labels
+{
+    position:relative;
+    float:left;
+}
+.botones 
+{
+    color:#FFFFFF;
+    border-style:none;
+    width:120px;
+    height:40px;
+    margin-top:30px;
+    background-color:#111547;
+}
+    .botones:hover 
+    {
+        background-color:#0f205a;
+    }
+.botonesTablas
+{
+    color:#FFFFFF;
+    border-style:none;
+    width:auto;
+    margin:10px;
+    height:auto;
+    padding:5px;
+    background-color:#111547;
+}
+    .botonesTablas:hover 
+    {
+        background-color:#0f205a;
+    }
+.divTablas
+{
+    position:relative;
+    float:left;
+    width:80%;
+    margin-left:10%;
+    margin-top:30px;
+}
+.divModificacion
+{
+    position:relative;
+    float:left;
+    width:60%;
+    margin-left:20%;
+    margin-top:30px;
+}
+.tablas
+{
+    background-color:white;
+    width:100%;
+    text-align:center;
+}
+.tablasEncabezados
+{
+    background-color:#111547;
+}
+    .tablasEncabezados th
+    {
+        color:white;
+    }
+    .tablasEncabezados a
+    {
+        color:white;
+    }
+.listaSeleccionTablas
+{
+    margin-left:10%;
+    margin-top:20px;
+}
+.codigosColores
+{
+    position:relative;
+    float:left;
+    width:30px;
+    height:30px;
+    border:solid;
+    color:#111547;
+    margin-right:10px;
+    margin-left:30px;
+}
+/*Aqui los elementos individuales*/
+#formaPrincipal 
+{
+    width:100%;
+}
+/*Borde superior de la página*/
+#bordeSuperior 
+{
+    height:50px;
+    width:100%;
+    background-color:#13183A;
+}
+/*El área del encabezado donde se encuentran el logo, el título y el menu de navegación*/
+#encabezado 
+{
+    height:220px;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    background-color:#DEDEDE;
+    min-width:800px;
+    box-shadow: -5px 10px 20px 0px #666666, 5px 10px 20px 0px #666666;
+}
+#areaTitulo 
+{
+    height:150px;
+    width:100%;
+}
+#logo 
+{
+    position:relative;
+    float:left;
+    margin-top:20px;
+    width:auto;
+    height:120px;
+    margin-left:5%;
+}
+    #logo img 
+    {
+        width:auto;
+        height:120px;
+    }
+#titulo 
+{
+    margin-top:20px;
+    position:relative;
+    float:left;
+    width:auto;
+    height:30px;
+}
+    #titulo img 
+    {
+        margin-left:20px;
+        width:600px;
+        height:30px;
+    }
+/*Formato del menu de navegación*/
+#menuNavegacion 
+{
+    height:50px;
+    width:100%;
+    background-color:#D2D2D2;
+}
+    #menuNavegacion ul
+    {
+        list-style-type: upper-roman;
+	    text-align:right;
+	    margin:0px;
+        padding:0px;
+    }
+    #menuNavegacion li
+    {
+	    display:inline-block;
+        border-right: 2px dotted #666666;
+    }
+        #menuNavegacion li:last-child 
+        {
+            border-right: none;
+        }
+        #menuNavegacion li:hover ul li a:hover 
+        {        
+	        background-color:#DEDEDE;
+	        color:#666666;
+        }
+    #menuNavegacion a:link
+    {
+        padding: 13px 20px 12px 20px;
+        line-height: 50px;
+        font-size: 18px;
+        text-decoration: none;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #menuNavegacion a:visited 
+    {        
+        color:#666666;
+    }
+
+    #menuNavegacion a:hover
+    {
+	    background-color:#DEDEDE;
+	    color:#333333;
+    }
+
+    #menuNavegacion a:active
+    {
+	    background-color:#DEDEDE;
+	    color:#333333;
+    }
+
+#separadorEncabezado 
+{
+    height:20px;
+    width:100%;
+    background-color:#007161;
+}
+#cuerpo 
+{
+    position:relative;
+    float:left;
+    min-height:800px;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    padding-bottom:50px;
+    background-color:#DEDEDE;
+    min-width:800px;
+    box-shadow: -5px 10px 20px 0px #666666, 5px 10px 20px 0px #666666;
+}
+#contenidoCuerpo
+{
+    position:relative;
+    float:left;
+    min-height:500px;
+    height:auto;
+}
+#pieDePagina 
+{
+    position:relative;
+    float:left;
+    height:250px;
+    width:100%;
+    background-color:#13183A;
+}
+    #pieDePagina span 
+    {
+        position:relative;
+        float:left;
+        margin:30px;
+        width:1px;
+        height:180px;
+        background-color:#DEDEDE;
+    }
+#enlaces 
+{
+    position:relative;
+    float:left;
+    width:35%;
+    margin-top:110px;
+    height:30px;
+}
+
+    #enlaces div 
+    {
+        position:relative;
+        float:right;
+        margin-top:15px;
+        margin-left:5px;
+        margin-right:5px;
+        width:30px;
+        height:30px;
+        top: 0px;
+        left: -1px;
+}
+    /*Fix para el engine Webkit de safari*/
+    #enlaces img 
+    {
+        width:auto;
+        height:20px;
+    }
+#infoContacto 
+{
+    position:relative;
+    float:left;
+    width:20%;
+    height:180px;
+    margin-top:30px;
+}
+    #infoContacto h6 
+    {
+        font-size:14px;
+        font-family:'Futura Std Heavy';
+        color:#FFFFFF;
+    }
+    #infoContacto p 
+    {
+        font-size:14px;
+        color:#FFFFFF;
+    }
+#logosRedesSociales
+{
+    position:relative;
+    float:left;
+    width:35%;
+    margin-top:110px;
+    height:30px;
+}
+    #logosRedesSociales div 
+    {
+        position:relative;
+        float:left;
+        margin-left:10px;
+        width:30px;
+        height:30px;
+    }
+
+/*Inicio sección child pages*/
+
+/*Reservaciones.aspx*/
+#divCalendario 
+{
+}
+
+/*Materiales.aspx*/
+
+
+
+/*Animaciones*/

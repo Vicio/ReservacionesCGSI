@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title>UAQ - Sistema de Reservación de Salas Audiovisuales</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/EstiloMasterPrincipal.css" />
+    </head>
+    <body>
+        <form id="formaPrincipal" runat="server">
+            <div id="bordeSuperior" runat="server">
+                <asp:Label style="float:left;color:white; padding:10px;margin-right:20px;" runat="server" ID="mensajeBienvenido"></asp:Label>
+                <asp:LinkButton style="float:right;color:white; padding:10px;margin-right:20px;" OnClick="linkCierreSesion_Click" runat="server" id="linkCierreSesion">CERRAR SESIÓN</asp:LinkButton>
+            </div>
+            <div id="encabezado" runat="server">
+                <div id="areaTitulo" runat="server">
+                    <div id="logo">
+                        <img src="../Imagenes/logoUAQ.svg" />
+                    </div>
+                    <div id="titulo">
+                        <img src="../Imagenes/tituloUAQ.svg" />              
+                    </div>
+                </div>
+                <div id="menuNavegacion" runat="server">
+                    <ul>
+                        <li>
+                            <a runat="server" id="linkReservaciones"  visible="false" href="Reservaciones.aspx">RESERVACIONES</a>
+                        </li>
+                        <li>
+                            <a runat="server" id="linkReportes"  visible="false" href="Reportes.aspx">REPORTES</a>
+                        </li>
+                        <li>
+                            <a runat="server" id="linkCuentas"  visible="false" href="Cuentas.aspx">USUARIOS</a>
+                        </li>
+                        <li>
+                            <a runat="server" id="linkEventos"  visible="false" href="Eventos.aspx">EVENTOS</a>
+                        </li>
+                        <li>
+                            <a runat="server" id="linkSalas"  visible="false" href="Salas.aspx">SALAS</a>
+                        </li>
+                        <li>
+                            <a runat="server" id="linkMateriales"  visible="false" href="Materiales.aspx">MATERIALES</a>
+                        </li>
+                        <li>
+                            <a runat="server" id="linkEscuelas"  visible="false" href="Escuelas.aspx">ESCUELAS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="separadorEncabezado">
+
+                </div>
+            </div>
+            <div id="cuerpo" runat="server">
+                <asp:ContentPlaceHolder id="contenidoCuerpo" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="pieDePagina" runat="server">
+                <div id="enlaces">
+                    <div>
+                        <a href="http://www.uaq.mx/inf-gral/calendario/semestral.html">
+                            <img src="../Imagenes/logoBoxGris.svg" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://maps.google.com/maps/ms?msid=200437142916695114164.0004c841a76bf6b40420d&msa=0&ll=20.584421,-100.38826&spn=0.133864,0.222988">
+                            <img src="../Imagenes/logoPin.svg" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://148.220.4.15/">
+                            <img src="../Imagenes/logoFeed.svg" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://perseo.uaq.mx/cas">
+                            <img src="../Imagenes/logoInterrogacion.svg" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://www.uaq.mx/contraloriasocial/">
+                            <img src="../Imagenes/logoOjo.svg" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://www.uaq.mx/directorio/">
+                            <img src="../Imagenes/logoTel.svg" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://www.uaq.mx/transparencia/uaq.html">
+                            <img src="../Imagenes/logoLupa.svg" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://mail.uaq.mx/">
+                            <img src="../Imagenes/logoMail.svg" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://www.uaq.mx/">
+                            <img src="../Imagenes/logoCasa.svg" />
+                        </a>
+                    </div>
+                </div>
+                <span></span>
+                <div id="infoContacto">
+                    <h6>Contacto UAQ</h6>
+                    <p>
+                        Coordinación de Videoconferencias, Centro Universitario<br />
+                        Tel. 192 12 00 Ext. <br />
+                        Mail:
+                    </p>
+                </div>
+                <span></span>
+                    <div id="logosRedesSociales">
+                        <div>
+                            <a href="http://instagram.com/uaqmx">
+                                <img src="../Imagenes/logoInstagramBlanco.svg" />              
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/UAQmx">
+                                <img src="../Imagenes/logoTwitterBlanco.svg" />              
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://tv.uaq.edu.mx/">
+                                <img src="../Imagenes/logoYoutubeBlanco.svg" />            
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.facebook.com/uaq.mx">
+                                <img src="../Imagenes/logoFacebookBlanco.svg" />            
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </form>
+    </body>
+</html>

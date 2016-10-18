@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Login_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title>Inicio de Sesión</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/EstiloMasterLogin.css" />
+    </head>
+    <body>
+        <form id="formaPrincipal" runat="server">
+            <div id="bordeSuperior" runat="server">
+                <div id="contenidoBorde">
+                    <div id="logo">
+                        <img src="../Imagenes/logoUAQ.svg" />
+                    </div>
+                    <div id="tituloBorde">
+                        <h1>UNIVERSIDAD AUTÓNOMA DE QUERÉTARO</h1>
+                        <h2>COORDINACIÓN GENERAL DE SERVICIOS DE INFORMATIZACIÓN</h2>
+                    </div>
+                    <div id="logosRedesSocialesBorde">
+                        <div>
+                            <a href="http://instagram.com/uaqmx">
+                                <img src="../Imagenes/logoInstagram.svg" />              
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/UAQmx">
+                                <img src="../Imagenes/logoTwitter.svg" />              
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://tv.uaq.edu.mx/">
+                                <img src="../Imagenes/logoYoutube.svg" />            
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.facebook.com/uaq.mx">
+                                <img src="../Imagenes/logoFacebook.svg" />            
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="separadorBorde"></div>
+            </div>
+            <div id="encabezado" runat="server">
+                <div id="areaPestana">
+                    <div>
+                        <img src="../Imagenes/pestana.svg" />                                  
+                    </div>
+                </div>
+                <div id="areaTituloPrincipal">
+                    <h1>CGSI</h1>
+                </div>
+                <div id="areaTituloSecundario">
+                    <h1>VIDEOCONFERENCIAS</h1>
+                    <div id="uaqLetras">
+                        <img src="../Imagenes/UAQ.svg" />
+                    </div>
+                    <div id="estrella">
+                        <img src="../Imagenes/estrella.svg" />                                   
+                    </div>
+                </div>
+                <div id="areaSeparadorEncabezado">
+
+                </div>
+            </div>
+            <div id="cuerpo">
+                <div id="separadorCuerpo"></div>
+                <div id="contenido">
+                    <asp:ContentPlaceHolder id="contenidoCuerpo" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div id="menuNavegacion">
+                    <a href="Inicio.aspx"><p>INICIO</p></a>
+                    <ul>
+                        <li><a href="Acceso.aspx">ACCESO</a></li>
+                        <li><a href="Registro.aspx">REGISTRO</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="pieDePagina">
+                <div>
+                    <a href="http://www.uaq.mx/inf-gral/calendario/semestral.html">
+                        <img src="../Imagenes/logoBoxGris.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://maps.google.com/maps/ms?msid=200437142916695114164.0004c841a76bf6b40420d&msa=0&ll=20.584421,-100.38826&spn=0.133864,0.222988">
+                        <img src="../Imagenes/logoPin.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="http://148.220.4.15/">
+                        <img src="../Imagenes/logoFeed.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="http://perseo.uaq.mx/cas">
+                        <img src="../Imagenes/logoInterrogacion.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.uaq.mx/contraloriasocial/">
+                        <img src="../Imagenes/logoOjo.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.uaq.mx/directorio/">
+                        <img src="../Imagenes/logoTel.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.uaq.mx/transparencia/uaq.html">
+                        <img src="../Imagenes/logoLupa.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="http://mail.uaq.mx/">
+                        <img src="../Imagenes/logoMail.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.uaq.mx/">
+                        <img src="../Imagenes/logoCasa.svg" />
+                    </a>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
